@@ -5,7 +5,7 @@ $susy: (
   );
 
 //mobile first
-  #page{
+  .grid-construct {
 
     @include container(77em); 
     padding-right: gutter();
@@ -15,7 +15,7 @@ $susy: (
 
   // for medium devices
   @include breakpoint($breakpoint-md) {
-    #page {
+    .grid-construct {
 
       @include container(77em);
       padding-right: gutter();
@@ -25,7 +25,7 @@ $susy: (
 
   // for large devices
  @include breakpoint($breakpoint-lg) {
-   #page {
+   .grid-construct {
      @include container(77em);
      padding-right: gutter();
      padding-left: gutter();

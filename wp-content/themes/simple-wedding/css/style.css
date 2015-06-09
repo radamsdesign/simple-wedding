@@ -36,6 +36,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Clearings
 # Widgets
 # Content
+	## Header
     ## Posts and pages
 	## Asides
 	## Comments
@@ -546,7 +547,7 @@ textarea {
 # Layout
 --------------------------------------------------------------*/
 /* line 8, ../sass/layout/_grid-setup.scss */
-#page {
+.grid-construct {
   max-width: 77em;
   margin-left: auto;
   margin-right: auto;
@@ -554,7 +555,7 @@ textarea {
   padding-left: 5.26316%;
 }
 /* line 12, ../bower_components/susy/sass/susy/output/support/_clearfix.scss */
-#page:after {
+.grid-construct:after {
   content: " ";
   display: block;
   clear: both;
@@ -562,7 +563,7 @@ textarea {
 
 @media (min-width: 601px) {
   /* line 18, ../sass/layout/_grid-setup.scss */
-  #page {
+  .grid-construct {
     max-width: 77em;
     margin-left: auto;
     margin-right: auto;
@@ -570,7 +571,7 @@ textarea {
     padding-left: 5.26316%;
   }
   /* line 12, ../bower_components/susy/sass/susy/output/support/_clearfix.scss */
-  #page:after {
+  .grid-construct:after {
     content: " ";
     display: block;
     clear: both;
@@ -578,7 +579,7 @@ textarea {
 }
 @media (min-width: 960px) {
   /* line 28, ../sass/layout/_grid-setup.scss */
-  #page {
+  .grid-construct {
     max-width: 77em;
     margin-left: auto;
     margin-right: auto;
@@ -586,7 +587,7 @@ textarea {
     padding-left: 5.26316%;
   }
   /* line 12, ../bower_components/susy/sass/susy/output/support/_clearfix.scss */
-  #page:after {
+  .grid-construct:after {
     content: " ";
     display: block;
     clear: both;
@@ -626,8 +627,10 @@ a:hover, a:active {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%;
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+  margin-top: -58px;
 }
 /* line 7, ../sass/navigation/_menus.scss */
 .main-navigation ul {
@@ -635,8 +638,9 @@ a:hover, a:active {
   list-style: none;
   margin: 0;
   padding-left: 0;
+  float: right;
 }
-/* line 13, ../sass/navigation/_menus.scss */
+/* line 14, ../sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -645,68 +649,74 @@ a:hover, a:active {
   left: -999em;
   z-index: 99999;
 }
-/* line 21, ../sass/navigation/_menus.scss */
+/* line 22, ../sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 27, ../sass/navigation/_menus.scss */
+/* line 28, ../sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
-/* line 33, ../sass/navigation/_menus.scss */
+/* line 34, ../sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
-/* line 46, ../sass/navigation/_menus.scss */
+/* line 47, ../sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
-/* line 51, ../sass/navigation/_menus.scss */
+/* line 52, ../sass/navigation/_menus.scss */
 .main-navigation li {
   float: left;
   position: relative;
+  margin-right: 30px;
 }
-/* line 59, ../sass/navigation/_menus.scss */
+/* line 61, ../sass/navigation/_menus.scss */
+.main-navigation li:last-child {
+  float: right;
+  margin-right: 0;
+}
+/* line 65, ../sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
 /* Small menu. */
-/* line 71, ../sass/navigation/_menus.scss */
+/* line 77, ../sass/navigation/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
-  /* line 77, ../sass/navigation/_menus.scss */
+  /* line 83, ../sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
-  /* line 80, ../sass/navigation/_menus.scss */
+  /* line 86, ../sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
-/* line 89, ../sass/navigation/_menus.scss */
+/* line 95, ../sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 94, ../sass/navigation/_menus.scss */
+/* line 100, ../sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 99, ../sass/navigation/_menus.scss */
+/* line 105, ../sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -825,6 +835,16 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+/* line 1, ../sass/site/primary/_header.scss */
+.site-branding {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
