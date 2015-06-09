@@ -1,2 +1,5 @@
 $size__site-main: 100%;
 $size__site-sidebar: 25%;
+$breakpoint-sm: max-width 600px !default;
+$breakpoint-md: min-width 601px !default;
+$breakpoint-lg: min-width 960px !default;

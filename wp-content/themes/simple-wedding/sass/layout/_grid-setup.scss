@@ -1,0 +1,34 @@
+$susy: (
+  global-box-sizing: border-box,
+  use-custom: (rem: true
+    )
+  );
+
+//mobile first
+  #page{
+
+    @include container(77em); 
+    padding-right: gutter();
+    padding-left: gutter();
+
+ }
+
+  // for medium devices
+  @include breakpoint($breakpoint-md) {
+    #page {
+
+      @include container(77em);
+      padding-right: gutter();
+      padding-left: gutter();
+    }
+  }
+
+  // for large devices
+ @include breakpoint($breakpoint-lg) {
+   #page {
+     @include container(77em);
+     padding-right: gutter();
+     padding-left: gutter();
+    }
+  }
+   

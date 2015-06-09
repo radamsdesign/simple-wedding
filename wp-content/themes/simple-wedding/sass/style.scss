@@ -27,6 +27,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 # Elements
 # Forms
+# Layout
+	## Grid Setup
 # Navigation
 	## Links
 	## Menus
@@ -45,6 +47,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
+@import "../bower_components/susy/sass/susy";
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";   
 
 /*--------------------------------------------------------------
 # Normalize
@@ -65,6 +69,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Forms
 --------------------------------------------------------------*/
 @import "forms/forms";
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+@import "layout/grid-setup";
 
 /*--------------------------------------------------------------
 # Navigation

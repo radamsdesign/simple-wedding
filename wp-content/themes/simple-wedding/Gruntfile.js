@@ -2,12 +2,12 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({ pkg: grunt.file.readJSON('package.json'),
 	
-		  sass: {                              // Task
-		    dist: {                            // Target
-		      options: {                       // Target options
-		        style: 'expanded'
+		  sass: {  // Task
+		    dist: {  // Target
+		      options: { // Target options
+		        style: 'expanded',
 		      },
-		      files: {                         // Dictionary of files
+		      files: { // Dictionary of files
 		        'css/style.css': 'sass/style.scss'
 		      }
 		    }
@@ -18,39 +18,72 @@ module.exports = function(grunt) {
 		      separator: ';',
 		    },
 		    dist: {
-		      src: ['js/customizer.js', 'js/navigation.js', 'js/skip-link-focus.js'],
-		      dest: 'js/build/main.js',
+		      src: ['js/navigation.js', 'js/skip-link-focus.js'],
+		      dest: 'js/prod/main.js',
 		    },
 		  },
 
-		 //  min: {
-			//     'dist': {
-			//         'src': ['src/foo.js', 'src/bar.js'],
-			//         'dest': 'build/foobar.min.js'
-			//     }
-			// },
+			uglify: {
+				 my_target: {
+					files: {
+					    'js/prod/main.min.js': ['js/prod/main.js']
+					}
+				}
+			},
+
 			cssmin: {
-			    'dist': {
-			        'src': ['css/style.css'],
-			        'dest': 'css/build/style.min.css'
-			    }
+					 // options: {
+					 //   shorthandCompacting: false,
+					 //   roundingPrecision: -1
+					 // },
+				target: {
+					files: {
+					    'css/prod/style.min.css': ['css/style.css']
+					}
+				}
+			},
+
+			compass: {  // Task
+				app: {  // Target
+					options: {  // Target options
+					    sassDir: 'sass',
+					    cssDir: 'css',
+					    environment: 'development'
+					 }
+				},
+				build: {  // Another target
+					options: {
+					sassDir: 'sass',
+					cssDir: 'css',
+					environment: 'development'
+					}
+				}
 			},
 
 			watch: {
 			  sass: {
-				files: 'sass/*/*.scss',
-				tasks: 'sass'
+				files: 'sass/**/*.scss',
+				tasks: ['compass:app']
 				},
-			},
+				js: {
+				  files: ['js/*.js'],
+				  tasks: []
+				     },
+			}
 		});
 	
 	
 	 //});
+
+	 //Build task
+  	grunt.registerTask('build', ['uglify', 'sass', 'concat', 'compass', 'cssmin']); // 'concat', 'min', 'requirejs', 'cssmin', 
 	
 	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-yui-compressor');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-compass');
 
 
 }

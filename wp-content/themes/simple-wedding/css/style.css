@@ -26,6 +26,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 # Elements
 # Forms
+# Layout
+	## Grid Setup
 # Navigation
 	## Links
 	## Menus
@@ -45,16 +47,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+/* line 1, ../sass/_normalize.scss */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
+/* line 7, ../sass/_normalize.scss */
 body {
   margin: 0;
 }
 
+/* line 11, ../sass/_normalize.scss */
 article,
 aside,
 details,
@@ -70,6 +75,7 @@ summary {
   display: block;
 }
 
+/* line 26, ../sass/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -78,52 +84,63 @@ video {
   vertical-align: baseline;
 }
 
+/* line 34, ../sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
+/* line 39, ../sass/_normalize.scss */
 [hidden],
 template {
   display: none;
 }
 
+/* line 44, ../sass/_normalize.scss */
 a {
   background-color: transparent;
 }
 
+/* line 48, ../sass/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
 }
 
+/* line 53, ../sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
+/* line 57, ../sass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
+/* line 62, ../sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
+/* line 66, ../sass/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
+/* line 71, ../sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
+/* line 76, ../sass/_normalize.scss */
 small {
   font-size: 80%;
 }
 
+/* line 80, ../sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -132,35 +149,43 @@ sup {
   vertical-align: baseline;
 }
 
+/* line 88, ../sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
+/* line 92, ../sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
+/* line 96, ../sass/_normalize.scss */
 img {
   border: 0;
 }
 
+/* line 100, ../sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
+/* line 104, ../sass/_normalize.scss */
 figure {
   margin: 1em 40px;
 }
 
+/* line 108, ../sass/_normalize.scss */
 hr {
   box-sizing: content-box;
   height: 0;
 }
 
+/* line 113, ../sass/_normalize.scss */
 pre {
   overflow: auto;
 }
 
+/* line 117, ../sass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -169,6 +194,7 @@ samp {
   font-size: 1em;
 }
 
+/* line 125, ../sass/_normalize.scss */
 button,
 input,
 optgroup,
@@ -179,15 +205,18 @@ textarea {
   margin: 0;
 }
 
+/* line 135, ../sass/_normalize.scss */
 button {
   overflow: visible;
 }
 
+/* line 139, ../sass/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
+/* line 144, ../sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -196,66 +225,79 @@ input[type="submit"] {
   cursor: pointer;
 }
 
+/* line 152, ../sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
+/* line 157, ../sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
+/* line 163, ../sass/_normalize.scss */
 input {
   line-height: normal;
 }
 
+/* line 167, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
+/* line 173, ../sass/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
+/* line 178, ../sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
 
+/* line 183, ../sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
+/* line 188, ../sass/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
+/* line 194, ../sass/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
 }
 
+/* line 199, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
 }
 
+/* line 203, ../sass/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
 
+/* line 207, ../sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* line 212, ../sass/_normalize.scss */
 td,
 th {
   padding: 0;
@@ -264,6 +306,7 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+/* line 1, ../sass/typography/_typography.scss */
 body,
 button,
 input,
@@ -276,26 +319,32 @@ textarea {
   line-height: 1.5;
 }
 
+/* line 1, ../sass/typography/_headings.scss */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
+/* line 1, ../sass/typography/_copy.scss */
 p {
   margin-bottom: 1.5em;
 }
 
+/* line 5, ../sass/typography/_copy.scss */
 dfn, cite, em, i {
   font-style: italic;
 }
 
+/* line 9, ../sass/typography/_copy.scss */
 blockquote {
   margin: 0 1.5em;
 }
 
+/* line 13, ../sass/typography/_copy.scss */
 address {
   margin: 0 0 1.5em;
 }
 
+/* line 17, ../sass/typography/_copy.scss */
 pre {
   background: #eeeeee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -308,22 +357,26 @@ pre {
   padding: 1.6em;
 }
 
+/* line 28, ../sass/typography/_copy.scss */
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem;
 }
 
+/* line 33, ../sass/typography/_copy.scss */
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
+/* line 38, ../sass/typography/_copy.scss */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
 }
 
+/* line 43, ../sass/typography/_copy.scss */
 big {
   font-size: 125%;
 }
@@ -331,10 +384,12 @@ big {
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
+/* line 1, ../sass/elements/_elements.scss */
 html {
   box-sizing: border-box;
 }
 
+/* line 5, ../sass/elements/_elements.scss */
 *,
 *:before,
 *:after {
@@ -342,18 +397,22 @@ html {
   box-sizing: inherit;
 }
 
+/* line 11, ../sass/elements/_elements.scss */
 body {
   background: #ffffff;
   /* Fallback for when there is no custom background color defined. */
 }
 
+/* line 15, ../sass/elements/_elements.scss */
 blockquote, q {
   quotes: "" "";
 }
+/* line 18, ../sass/elements/_elements.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
+/* line 24, ../sass/elements/_elements.scss */
 hr {
   background-color: #cccccc;
   border: 0;
@@ -361,32 +420,39 @@ hr {
   margin-bottom: 1.5em;
 }
 
+/* line 1, ../sass/elements/_lists.scss */
 ul, ol {
   margin: 0 0 1.5em 3em;
 }
 
+/* line 5, ../sass/elements/_lists.scss */
 ul {
   list-style: disc;
 }
 
+/* line 9, ../sass/elements/_lists.scss */
 ol {
   list-style: decimal;
 }
 
+/* line 13, ../sass/elements/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
   margin-left: 1.5em;
 }
 
+/* line 19, ../sass/elements/_lists.scss */
 dt {
   font-weight: bold;
 }
 
+/* line 23, ../sass/elements/_lists.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
 
+/* line 33, ../sass/elements/_elements.scss */
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
@@ -394,6 +460,7 @@ img {
   /* Adhere to container width. */
 }
 
+/* line 1, ../sass/elements/_tables.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%;
@@ -402,6 +469,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+/* line 1, ../sass/forms/_buttons.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -418,6 +486,7 @@ input[type="submit"] {
   padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
+/* line 16, ../sass/forms/_buttons.scss */
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -425,6 +494,7 @@ input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
 }
+/* line 21, ../sass/forms/_buttons.scss */
 button:active, button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
@@ -436,6 +506,7 @@ input[type="submit"]:focus {
   box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
+/* line 1, ../sass/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -446,6 +517,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
 }
+/* line 11, ../sass/forms/_fields.scss */
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -455,6 +527,7 @@ textarea:focus {
   color: #111;
 }
 
+/* line 16, ../sass/forms/_fields.scss */
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -463,29 +536,85 @@ input[type="search"] {
   padding: 3px;
 }
 
+/* line 24, ../sass/forms/_fields.scss */
 textarea {
   padding-left: 3px;
   width: 100%;
 }
 
 /*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/* line 8, ../sass/layout/_grid-setup.scss */
+#page {
+  max-width: 77em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 5.26316%;
+  padding-left: 5.26316%;
+}
+/* line 12, ../bower_components/susy/sass/susy/output/support/_clearfix.scss */
+#page:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+@media (min-width: 601px) {
+  /* line 18, ../sass/layout/_grid-setup.scss */
+  #page {
+    max-width: 77em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 5.26316%;
+    padding-left: 5.26316%;
+  }
+  /* line 12, ../bower_components/susy/sass/susy/output/support/_clearfix.scss */
+  #page:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media (min-width: 960px) {
+  /* line 28, ../sass/layout/_grid-setup.scss */
+  #page {
+    max-width: 77em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 5.26316%;
+    padding-left: 5.26316%;
+  }
+  /* line 12, ../bower_components/susy/sass/susy/output/support/_clearfix.scss */
+  #page:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+/*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
+/* line 1, ../sass/navigation/_links.scss */
 a {
   color: royalblue;
 }
+/* line 4, ../sass/navigation/_links.scss */
 a:visited {
   color: purple;
 }
+/* line 7, ../sass/navigation/_links.scss */
 a:hover, a:focus, a:active {
   color: midnightblue;
 }
+/* line 12, ../sass/navigation/_links.scss */
 a:focus {
   outline: thin dotted;
 }
+/* line 15, ../sass/navigation/_links.scss */
 a:hover, a:active {
   outline: 0;
 }
@@ -493,18 +622,21 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+/* line 1, ../sass/navigation/_menus.scss */
 .main-navigation {
   clear: both;
   display: block;
   float: left;
   width: 100%;
 }
+/* line 7, ../sass/navigation/_menus.scss */
 .main-navigation ul {
   display: none;
   list-style: none;
   margin: 0;
   padding-left: 0;
 }
+/* line 13, ../sass/navigation/_menus.scss */
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -513,56 +645,68 @@ a:hover, a:active {
   left: -999em;
   z-index: 99999;
 }
+/* line 21, ../sass/navigation/_menus.scss */
 .main-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
+/* line 27, ../sass/navigation/_menus.scss */
 .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
   left: 100%;
 }
+/* line 33, ../sass/navigation/_menus.scss */
 .main-navigation ul ul a {
   width: 200px;
 }
+/* line 46, ../sass/navigation/_menus.scss */
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
 }
+/* line 51, ../sass/navigation/_menus.scss */
 .main-navigation li {
   float: left;
   position: relative;
 }
+/* line 59, ../sass/navigation/_menus.scss */
 .main-navigation a {
   display: block;
   text-decoration: none;
 }
 
 /* Small menu. */
+/* line 71, ../sass/navigation/_menus.scss */
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
 }
 
 @media screen and (min-width: 37.5em) {
+  /* line 77, ../sass/navigation/_menus.scss */
   .menu-toggle {
     display: none;
   }
 
+  /* line 80, ../sass/navigation/_menus.scss */
   .main-navigation ul {
     display: block;
   }
 }
+/* line 89, ../sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
+/* line 94, ../sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
+/* line 99, ../sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -575,6 +719,7 @@ a:hover, a:active {
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
+/* line 2, ../sass/modules/_accessibility.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -582,6 +727,7 @@ a:hover, a:active {
   width: 1px;
   overflow: hidden;
 }
+/* line 9, ../sass/modules/_accessibility.scss */
 .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
   background-color: #f1f1f1;
   border-radius: 3px;
@@ -606,18 +752,21 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
+/* line 1, ../sass/modules/_alignments.scss */
 .alignleft {
   display: inline;
   float: left;
   margin-right: 1.5em;
 }
 
+/* line 7, ../sass/modules/_alignments.scss */
 .alignright {
   display: inline;
   float: right;
   margin-left: 1.5em;
 }
 
+/* line 13, ../sass/modules/_alignments.scss */
 .aligncenter {
   display: block;
   margin-left: auto;
@@ -627,6 +776,7 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
+/* line 1, ../sass/modules/_clearings.scss */
 .clear:before,
 .clear:after,
 .entry-content:before,
@@ -643,6 +793,7 @@ a:hover, a:active {
   display: table;
 }
 
+/* line 16, ../sass/modules/_clearings.scss */
 .clear:after,
 .entry-content:after,
 .comment-content:after,
@@ -655,15 +806,18 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+/* line 1, ../sass/site/secondary/_widgets.scss */
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */
 }
+/* line 5, ../sass/site/secondary/_widgets.scss */
 .widget select {
   max-width: 100%;
 }
 
 /* Search widget. */
+/* line 11, ../sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none;
 }
@@ -674,30 +828,36 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+/* line 1, ../sass/site/primary/_posts-and-pages.scss */
 .sticky {
   display: block;
 }
 
+/* line 5, ../sass/site/primary/_posts-and-pages.scss */
 .hentry {
   margin: 0 0 1.5em;
 }
 
+/* line 9, ../sass/site/primary/_posts-and-pages.scss */
 .byline,
 .updated:not(.published) {
   display: none;
 }
 
+/* line 14, ../sass/site/primary/_posts-and-pages.scss */
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
+/* line 19, ../sass/site/primary/_posts-and-pages.scss */
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
 
+/* line 25, ../sass/site/primary/_posts-and-pages.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
@@ -706,6 +866,7 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
+/* line 1, ../sass/site/primary/_asides.scss */
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
@@ -714,10 +875,12 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+/* line 1, ../sass/site/primary/_comments.scss */
 .comment-content a {
   word-wrap: break-word;
 }
 
+/* line 4, ../sass/site/primary/_comments.scss */
 .bypostauthor {
   display: block;
 }
@@ -726,6 +889,7 @@ a:hover, a:active {
 # Infinite scroll
 --------------------------------------------------------------*/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
+/* line 2, ../sass/modules/_infinite-scroll.scss */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
   /* Theme Footer (when set to scrolling) */
@@ -733,6 +897,7 @@ a:hover, a:active {
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+/* line 8, ../sass/modules/_infinite-scroll.scss */
 .infinity-end.neverending .site-footer {
   display: block;
 }
@@ -740,6 +905,7 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
+/* line 1, ../sass/media/_media.scss */
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -750,6 +916,7 @@ a:hover, a:active {
 }
 
 /* Make sure embeds and iframes fit their containers. */
+/* line 11, ../sass/media/_media.scss */
 embed,
 iframe,
 object {
@@ -759,19 +926,23 @@ object {
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
+/* line 1, ../sass/media/_captions.scss */
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
+/* line 5, ../sass/media/_captions.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+/* line 9, ../sass/media/_captions.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
+/* line 14, ../sass/media/_captions.scss */
 .wp-caption-text {
   text-align: center;
 }
@@ -779,43 +950,52 @@ object {
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
+/* line 1, ../sass/media/_galleries.scss */
 .gallery {
   margin-bottom: 1.5em;
 }
 
+/* line 5, ../sass/media/_galleries.scss */
 .gallery-item {
   display: inline-block;
   text-align: center;
   vertical-align: top;
   width: 100%;
 }
+/* line 11, ../sass/media/_galleries.scss */
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
+/* line 15, ../sass/media/_galleries.scss */
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
 }
+/* line 19, ../sass/media/_galleries.scss */
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
+/* line 23, ../sass/media/_galleries.scss */
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
+/* line 27, ../sass/media/_galleries.scss */
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
+/* line 31, ../sass/media/_galleries.scss */
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
+/* line 35, ../sass/media/_galleries.scss */
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
+/* line 39, ../sass/media/_galleries.scss */
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
 
+/* line 44, ../sass/media/_galleries.scss */
 .gallery-caption {
   display: block;
 }
-
-/*# sourceMappingURL=style.css.map */
