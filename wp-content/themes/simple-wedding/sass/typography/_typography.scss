@@ -9,6 +9,16 @@ textarea {
 	line-height: $font__line-height-body;
 }
 
+// Lato font stack
+
+  @include font-face(latothin, '../fonts/lato-thin-webfont', normal, normal);
+
+  @mixin latothin {
+  font-family: 'latothin'; 
+  font-weight: normal;
+  font-style: normal;
+  }
+
 @import "headings";
 
 @import "copy";

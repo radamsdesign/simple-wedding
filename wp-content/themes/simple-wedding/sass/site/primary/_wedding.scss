@@ -1,0 +1,39 @@
+section.wedding-info-section {
+	
+	text-align: center;
+}
+
+.left-col {
+	@include breakpoint($breakpoint-lg) {
+		@include span(6 of 12);
+		position: relative;
+	}
+}
+
+.right-col {
+	@include breakpoint($breakpoint-lg) {
+		@include span(6 of 12 last);
+		position: relative;
+	}
+}
+
+h4.column-title {
+	position: absolute;
+  	top: 50px;
+  	text-align: center;
+  	left: 0;
+  	right: 0;
+  	@include latothin;
+  	font-size: 2em;
+  	font-weight: bold;
+  	color: $white;
+}
+
+.column-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+  	padding: 0px 60px;
+}

@@ -1,3 +1,10 @@
 .site-branding {
-	@include span(6 of 12);
+	@include breakpoint($breakpoint-lg) {
+		@include span(6 of 12);
+	}
+	
+	h1.site-title {
+		@include latothin;
+
+	}
 }

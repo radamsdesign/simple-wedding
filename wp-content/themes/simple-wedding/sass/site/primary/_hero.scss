@@ -1,0 +1,32 @@
+section.hero-image{
+	position: relative;
+    height: 600px;
+    width: 100%;
+   -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	background-position: center -160px;
+	background-repeat: no-repeat;
+
+	.hero-text-overlay {
+		position: absolute;
+		left: 50%;
+		top:50%;
+		transform: translate(-50%, -50%);
+		color: $white;
+		@include latothin;
+		text-align: center;
+
+		h2 {
+			font-size: 5em;
+			font-weight: lighter;
+		}
+
+		h3 {
+			font-size: 3em;
+			font-weight: bold;
+		}
+	}
+
+}
