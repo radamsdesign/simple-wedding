@@ -22,7 +22,8 @@ get_header(); ?>
 
 		<?php if( get_field('left_image') ): ?>
 			<div class="left-col column">
-			<img src="<?php the_field('left_image'); ?>" />
+			<div class="overlay"></div>
+			<a href="#"><img src="<?php the_field('left_image'); ?>" /></a>
 		<?php endif; ?>
 
 		<?php if( get_field('left_image_title') ): ?>
@@ -36,7 +37,8 @@ get_header(); ?>
 
 		<?php if( get_field('right_image') ): ?>
 			<div class="right-col column">
-			<img src="<?php the_field('right_image'); ?>" />
+			<div class="overlay"></div>
+			<a href="#"><img src="<?php the_field('right_image'); ?>" /></a>
 		<?php endif; ?>
 
 		<?php if( get_field('right_image_title') ): ?>

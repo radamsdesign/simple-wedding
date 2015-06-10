@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 		      separator: ';',
 		    },
 		    dist: {
-		      src: ['js/navigation.js', 'js/skip-link-focus.js'],
+		      src: ['js/vendor/jquery-2.1.4.min.js', 'js/navigation.js', 'js/skip-link-focus.js', 'js/app.js'],
 		      dest: 'js/prod/main.js',
 		    },
 		  },

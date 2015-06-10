@@ -19,7 +19,8 @@ section.wedding-info-section {
 
 h4.column-title {
 	position: absolute;
-  	top: 50px;
+  	top: 100px;
+  	margin: 0;
   	text-align: center;
   	left: 0;
   	right: 0;
@@ -27,6 +28,12 @@ h4.column-title {
   	font-size: 2em;
   	font-weight: bold;
   	color: $white;
+  	@include transition(top 0.6s ease-in);
+}
+
+.show .column-title {
+	top: 10px;
+	@include transition(top 0.6s ease-out);
 }
 
 .column-text {
@@ -36,4 +43,28 @@ h4.column-title {
 	transform: translate(-50%, -50%);
 	width: 100%;
   	padding: 0px 60px;
+  	color: $white;
+    visibility: hidden;
+  	opacity: 0;
+  	@include transition(opacity 0.8s ease-in);
+}
+
+.show .column-text {
+	visibility: visible;
+	opacity: 1;
+	@include transition(opacity 0.8s ease-out);
+}
+
+.show .overlay {
+	position: absolute;
+	content: '';
+	width: 452px;
+	margin: auto;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
 }
