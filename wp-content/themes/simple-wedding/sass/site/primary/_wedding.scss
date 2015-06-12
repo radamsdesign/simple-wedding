@@ -44,9 +44,9 @@ h4.column-title {
 	width: 100%;
   	padding: 0px 60px;
   	color: $white;
-    visibility: hidden;
   	opacity: 0;
   	@include transition(opacity 0.8s ease-in);
+    visibility: hidden;
 }
 
 .show .column-text {
@@ -66,5 +66,9 @@ h4.column-title {
 	right: 0;
 	bottom: 0;
 	left: 0;
+	display: block;
+}
+
+.column a {
 	display: block;
 }
