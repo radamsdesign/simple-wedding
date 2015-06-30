@@ -1,0 +1,43 @@
+.panel-body {
+	overflow: hidden;
+
+    .left-half {
+      @include span(6 of 12);
+    }
+
+    .right-half {
+      @include span(6 of 12 last);
+    }
+
+    h3, h4 {
+          text-align: center;
+      }
+}
+
+.places {
+	float: left;
+  	clear: left;
+  	margin-bottom: 30px;
+
+  	&:last-child {
+  		margin-bottom: 0px;
+  	}
+}
+
+.place-thumb {
+	float: left;
+	max-width: 100px;
+}
+
+.place-title {
+	float: left;
+  	margin-left: 30px;
+  	font-size: 1.15em;
+
+  	a {
+  		@include latothin;
+  		font-weight: bolder;
+  		color: $black;
+  		text-transform: uppercase;
+  	}
+}

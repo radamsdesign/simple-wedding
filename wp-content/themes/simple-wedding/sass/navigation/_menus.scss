@@ -2,7 +2,8 @@
 	clear: both;
 	display: block;
 	@include breakpoint($breakpoint-lg) {
-		@include span(6 of 12 last);
+		@include span(12 of 12 last);
+		margin: auto;
 	}
 	margin-top: -43px;
 
@@ -11,7 +12,8 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		float: right;
+		text-align: center;
+		//float: right;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -52,9 +54,11 @@
 		}
 	}
 	li {
-		float: left;
 		position: relative;
+		display: inline-block;
 		margin-right: 30px;
+		height: 55px;
+  		line-height: 55px;
 
 		&:hover > a,
 		&.focus > a {
@@ -62,6 +66,7 @@
 
 		&:last-child {
 			@include last;
+			float: none;
 		}
 	}
 	a {
