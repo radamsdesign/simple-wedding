@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<section class="our-story">
+	<section class="our-story" id="our-story">
 		<div class="slider">
 			<div class="carousel slide" data-ride="carousel" id="bs-carousel">
   
@@ -58,7 +58,7 @@ get_header(); ?>
 		</div><!-- .slider -->
 	</section><!-- .our-story -->
 
-	<section class="wedding-info-section">
+	<section class="wedding-info-section" id="wedding">
 	<div class="grid-construct">
 
 		<?php if( get_field('section_title') ): ?>
@@ -102,7 +102,7 @@ get_header(); ?>
 		</div><!-- .grid-construct -->
 	</section><!-- .wedding-info-section -->
 
-	<section class="rsvp">
+	<section class="rsvp" id="rsvp">
 		<div class="grid-construct">
 		<h3 class="section-title">RSVP</h3>
 		<?php echo do_shortcode('[rsvp]'); ?>
@@ -111,7 +111,7 @@ get_header(); ?>
 
 	</section><!-- .rsvp -->
 
-	<section class="out-of-towners">
+	<section class="out-of-towners" id="out-of-towners">
 		<div class="grid-construct">
 
 		<?php if( get_field('section_title_lower') ): ?>
@@ -401,7 +401,7 @@ The wedding is on the Saturday of Labor Day Weekend, we suggest booking accommod
 	</div><!-- .grid-construct -->
 
 	</section><!-- .rsvp -->
-<section class="registry">
+<section class="registry" id="registry">
 
 	<div class="grid-construct">
 		<?php if( get_field('section_6_title') ): ?>

@@ -5,7 +5,16 @@
 		@include span(12 of 12 last);
 		margin: auto;
 	}
+
 	margin-top: -43px;
+
+	@include breakpoint($breakpoint-md) {
+		margin-top: -3px;
+	}
+
+	@include breakpoint($breakpoint-sm) {
+		margin-top: 0px;
+	}
 
 	ul {
 		display: none;
@@ -72,6 +81,12 @@
 	a {
 		display: block;
 		text-decoration: none;
+		color: $black;
+		text-transform: uppercase;
+
+		&:hover {
+			color: #999999;
+		}
 	}
 
 	.current_page_item > a,
@@ -114,4 +129,42 @@
 		text-align: right;
 		width: 50%;
 	}
+}
+
+.mobile-wrap {
+	@include breakpoint($breakpoint-sm) {
+		width: 100%;
+		padding: 0px;
+	}
+}
+
+.main-navigation.toggled {
+	padding-top: 52px;
+	background: $white;
+	position: relative;
+
+	ul {
+		background: $mobile-nav-background;
+	}
+
+	li {
+		display: block;
+		margin-right: 0px;
+		border-top: 1px solid #dddddd;
+	}
+}
+
+button.menu-toggle {
+	margin-top: 0px;
+	background: none;
+  	border: none;
+  	font-size: 26px;
+  	box-shadow: 0px 0px 0px;
+  	-webkit-box-shadow: 0px 0px 0px;
+  	-moz-box-shadow: 0px 0px 0px;
+  	outline: none;
+  	position: absolute;
+  	right: 20px;
+  	top: -3px;
+  	width: 50px;
 }

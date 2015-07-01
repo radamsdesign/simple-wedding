@@ -7,10 +7,12 @@
 	$(document).ready(function() {
   function setHeight() {
   	navHeight = $("header#masthead").height();
-    console.log(navHeight);
+    //console.log(navHeight);
     windowHeight = $(window).innerHeight();
-    console.log(windowHeight);
+    heroHeight = windowHeight - navHeight;
+   // console.log(windowHeight);
     $('section, .slider-img').css('min-height', windowHeight);
+    $('section.hero-image').css('min-height', heroHeight);
   };
   setHeight();
   
@@ -25,10 +27,18 @@ var waypoints = $('section.our-story').waypoint({
   }
 })
 
-// var sticky = new Waypoint.Sticky({
-//   element: $('header#masthead'),
-//   wrapper: '<div class="sticky-wrapper waypoint" />'
-// });
+// jQuery ScrollTo 
+$("ul#primary-menu li a").on("click", function(e) {
+  e.preventDefault();
+  target = this.hash;
+  $.scrollTo(target, 1000, {offset:-75});
+});
+
+
+$("nav#site-navigation ul li a").on("click", function() {
+  $("nav#site-navigation").removeClass("toggled");
+});
+
 
 
 

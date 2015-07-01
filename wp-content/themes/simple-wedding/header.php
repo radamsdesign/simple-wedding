@@ -23,19 +23,19 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'simple-wedding' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-	<div class="grid-construct">
+	<div class="grid-construct mobile-wrap">
 		<div class="site-branding">
 			<!--<h1 class="site-title"><a href="<?php// echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php //bloginfo( 'name' ); ?></a></h1>-->
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'simple-wedding' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '&#9776;', 'simple-wedding' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</div><!-- .grid-construct -->
 	</header><!-- #masthead -->
 
-
+<div id="home"></div>
 <section class="hero-image" style="background-image:url(<?php the_field('hero_image'); ?>)">
 		<?php //if( get_field('hero_image') ): ?>
 			<!--<img src="<?php //the_field('hero_image'); ?>" />-->
