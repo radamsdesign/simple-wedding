@@ -83,6 +83,8 @@
 		text-decoration: none;
 		color: $black;
 		text-transform: uppercase;
+		@include bebas;
+		font-size: 2em;
 
 		&:hover {
 			color: #999999;

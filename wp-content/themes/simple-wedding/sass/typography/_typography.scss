@@ -19,6 +19,36 @@ textarea {
   font-style: normal;
   }
 
+// Tall Abbey font stack
+
+  @include font-face(tall_abbey_serif_regularRg, '../fonts/tall-abbey-serif-rg-webfont', normal, normal);
+
+   @mixin abbey {
+  font-family: 'tall_abbey_serif_regularRg'; 
+  font-weight: normal;
+  font-style: normal;
+  }
+
+// Ondise font stack
+
+  @include font-face(ondiseregular, '../fonts/magpie_paper_works_-_ondise-webfont', normal, normal);
+
+   @mixin ondise {
+  font-family: 'ondiseregular'; 
+  font-weight: normal;
+  font-style: normal;
+  }
+
+// Bebas font stack
+
+  @include font-face(bebas_neuelight, '../fonts/bebasneue_light-webfont', normal, normal);
+
+   @mixin bebas {
+  font-family: 'bebas_neuelight'; 
+  font-weight: normal;
+  font-style: normal;
+  }
+
 @import "headings";
 
 @import "copy";

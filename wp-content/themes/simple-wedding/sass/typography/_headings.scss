@@ -4,8 +4,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h3.section-title {
 	color: $black;
-	@include latothin;
+	//@include latothin;
+	@include abbey;
 	text-transform: uppercase;
-	font-size: 2.5em;
+	font-size: 4.5em;
 	text-align: center;
 }

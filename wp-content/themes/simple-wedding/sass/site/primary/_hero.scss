@@ -15,17 +15,23 @@ section.hero-image{
 		top:50%;
 		transform: translate(-50%, -50%);
 		color: $white;
-		@include latothin;
+		//@include latothin;
+		//@include ondise;
+		@include abbey;
 		text-align: center;
+		text-transform: uppercase;
 
 		h2 {
-			font-size: 5em;
+			font-size: 7em;
 			font-weight: lighter;
+			margin-bottom: 0px;
 		}
 
 		h3 {
 			font-size: 3em;
 			font-weight: bold;
+			@include bebas;
+			margin-top: -36px;
 		}
 	}
 
